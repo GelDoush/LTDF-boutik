@@ -31,7 +31,8 @@ def find_product(products, product_id):
 
 def search(products, text):
     """Renvoie les produits dont le nom contient le texte recherché."""
-    return [p for p in products if text in p["name"]]
+    normalized_text = text.casefold()
+    return [p for p in products if normalized_text in p["name"].casefold()]
 
 
 # TODO (mission F3) : ajouter ici la fonction filter_by_category(products, category)

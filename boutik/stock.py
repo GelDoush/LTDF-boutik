@@ -3,7 +3,7 @@
 
 def is_available(product, quantity):
     """Indique si on peut vendre `quantity` exemplaires de ce produit."""
-    return product["stock"] > quantity
+    return product["stock"] >= quantity
 
 
 def reserve(product, quantity):
@@ -13,4 +13,6 @@ def reserve(product, quantity):
     product["stock"] -= quantity
 
 
-# TODO (mission F7) : ajouter ici la fonction low_stock(products, threshold=3)
+def low_stock(products, threshold=3):
+    """Renvoie la liste des produits dont le stock est inférieur ou égal à `threshold`."""
+    return [p for p in products if p["stock"] <= threshold]
