@@ -59,6 +59,8 @@ Lis [CONTRIBUTING.md](CONTRIBUTING.md) : une issue, une branche, une Pull Reques
 
 | Rôle | Nom | GitHub |
 | Collaborateur | Nathan | @npautrat |
+| PDG | Kenari | @Kenari01 |
+| Chef de projet | Elouan | @GelDoush |
 
 ## Licence
 

@@ -12,9 +12,7 @@ def reserve(product, quantity):
         raise ValueError(f"Stock insuffisant pour {product['name']}")
     product["stock"] -= quantity
 
+
 def low_stock(products, threshold=3):
     """Renvoie la liste des produits dont le stock est inférieur ou égal à `threshold`."""
-    for i in products:
-        if i["stock"] <= threshold:
-            yield i
-    
+    return [p for p in products if p["stock"] <= threshold]
