@@ -34,7 +34,19 @@ def search(products, text):
     return [p for p in products if normalized_text in p["name"].casefold()]
 
 
-# TODO (mission F3) : ajouter ici la fonction filter_by_category(products, category)
+def filter_by_category(products, category):
+    """Renvoie les produits de la catégorie donnée, sans tenir compte de la casse."""
+    if category is None:
+        return []
+
+    normalized_category = str(category).strip().casefold()
+    if not normalized_category:
+        return []
+
+    return [
+        product for product in products
+        if str(product.get("category", "")).strip().casefold() == normalized_category
+    ]
 
 
 def categories(products):
@@ -42,4 +54,6 @@ def categories(products):
     return sorted({p["category"] for p in products})
 
 
-# TODO (mission F6) : ajouter ici la fonction sort_by_price(products, descending=False)
+def sort_by_price(products, descending=False):
+    """Trie les produits par prix HT, croissant par défaut."""
+    return sorted(products, key=lambda product: float(product["price_ht"]), reverse=descending)
