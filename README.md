@@ -58,7 +58,7 @@ Lis [CONTRIBUTING.md](CONTRIBUTING.md) : une issue, une branche, une Pull Reques
 ## Équipe
 
 | Rôle | Nom | GitHub |
-| Chef de projet | Elouan | @GelDoush |
+| --- | --- | --- |
 
 ## Licence
 
