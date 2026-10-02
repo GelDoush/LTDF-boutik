@@ -59,7 +59,7 @@ Lis [CONTRIBUTING.md](CONTRIBUTING.md) : une issue, une branche, une Pull Reques
 
 | Rôle | Nom | GitHub |
 | --- | --- | --- |
-| Commercial | Maximilien | @maximilienjoyerocher-ai
+| Commercial | Maximilien | @maximilienjoyerocher-ai 
 
 ## Licence
 
