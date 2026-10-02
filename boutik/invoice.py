@@ -7,7 +7,7 @@ from boutik.pricing import price_ttc
 
 def format_price(amount):
     """Met en forme un montant en euros, avec 2 décimales : 5 -> '5.00 €'."""
-    return str(amount) + " €"
+    return f"{amount:.2f} €"
 
 
 def build_invoice(cart, products):
