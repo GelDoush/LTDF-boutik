@@ -16,7 +16,7 @@ def remove_from_cart(cart, product_id):
 
 def cart_count(cart):
     """Renvoie le nombre total d'articles dans le panier."""
-    return len(cart)
+    return sum(cart.values())
 
 
 def cart_total(cart, products):
